@@ -107,15 +107,17 @@ class BlogPostRenderer {
         this.blogGrid.innerHTML = '';
         
         // Render all posts
-        posts.forEach(post => {
-            const card = this.createBlogCard(post);
+        posts.forEach((post, index) => {
+            const card = this.createBlogCard(post, index);
             this.blogGrid.appendChild(card);
         });
     }
     
-    createBlogCard(post) {
+    createBlogCard(post, index) {
         const article = document.createElement('article');
         article.className = 'blog-card';
+        article.style.cursor = 'pointer';
+        article.setAttribute('data-post-index', index);
         
         article.innerHTML = `
             <img src="${post.image}" alt="${post.title}" class="card-image" loading="lazy">
@@ -132,7 +134,92 @@ class BlogPostRenderer {
             </div>
         `;
         
+        // Add click event to open modal
+        article.addEventListener('click', () => {
+            this.openBlogPost(index);
+        });
+        
         return article;
+    }
+    
+    openBlogPost(index) {
+        if (typeof blogPosts !== 'undefined' && blogPosts[index]) {
+            const modalHandler = new BlogModalHandler();
+            modalHandler.openModal(blogPosts[index]);
+        }
+    }
+}
+
+// ========================================
+// Blog Modal Handler
+// ========================================
+
+class BlogModalHandler {
+    constructor() {
+        this.modal = document.getElementById('blog-modal');
+        this.modalOverlay = document.getElementById('modal-overlay');
+        this.modalClose = document.getElementById('modal-close');
+        this.modalTitle = document.getElementById('modal-title');
+        this.modalImage = document.getElementById('modal-image');
+        this.modalAuthor = document.getElementById('modal-author');
+        this.modalAvatar = document.getElementById('modal-avatar');
+        this.modalDate = document.getElementById('modal-date');
+        this.modalBody = document.getElementById('modal-body');
+        
+        this.setupEventListeners();
+    }
+    
+    setupEventListeners() {
+        // Close button
+        if (this.modalClose) {
+            this.modalClose.addEventListener('click', () => this.closeModal());
+        }
+        
+        // Overlay click
+        if (this.modalOverlay) {
+            this.modalOverlay.addEventListener('click', () => this.closeModal());
+        }
+        
+        // Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.modal && this.modal.classList.contains('active')) {
+                this.closeModal();
+            }
+        });
+    }
+    
+    openModal(post) {
+        if (!this.modal) return;
+        
+        // Populate modal content
+        if (this.modalTitle) this.modalTitle.textContent = post.title;
+        if (this.modalImage) {
+            this.modalImage.src = post.image;
+            this.modalImage.alt = post.title;
+        }
+        if (this.modalAuthor) this.modalAuthor.textContent = post.author;
+        if (this.modalAvatar) {
+            this.modalAvatar.src = post.avatar;
+            this.modalAvatar.alt = post.author;
+        }
+        if (this.modalDate) this.modalDate.textContent = post.date;
+        if (this.modalBody) {
+            this.modalBody.innerHTML = post.content || '<p>Content coming soon...</p>';
+        }
+        
+        // Show modal
+        this.modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Scroll to top of modal
+        this.modal.scrollTop = 0;
+    }
+    
+    closeModal() {
+        if (!this.modal) return;
+        
+        this.modal.classList.remove('active');
+        document.body.style.overflow = '';
     }
 }
 
