@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled UI - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">Untitled UI</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link">Products <span class="dropdown-icon">▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Product 1</a>
+                        <a href="#">Product 2</a>
+                        <a href="#">Product 3</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link">Blog <span class="dropdown-icon">▾</span></a>
+                    <div class="dropdown-content">
+                        <a href="#">Recent Posts</a>
+                        <a href="#">Featured</a>
+                        <a href="#">Categories</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Pricing</a>
+                <a href="#" class="nav-link">About us</a>
+            </nav>
+            
+            <div class="auth-buttons">
+                <a href="#" class="btn-text">Log in</a>
+                <a href="#" class="btn-primary">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&h=600&fit=crop" alt="Featured post" class="hero-image">
+                <div class="hero-overlay">
+                    <span class="featured-badge">Featured</span>
+                    <h1 class="hero-title">Breaking Into Product Design: Advice from Untitled Founder, Frankie</h1>
+                    <p class="hero-description">Discover the journey of our founder and learn valuable insights about breaking into the competitive world of product design. From first principles to advanced techniques.</p>
+                    <button class="hero-nav-arrow" aria-label="Next featured post">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-section">
+        <div class="blog-container">
+            <h2 class="section-title">Recent blog posts</h2>
+            
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=250&fit=crop" alt="Migrating to Linear 101" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Migrating to Linear 101</h3>
+                        <p class="card-description">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=1" alt="Jonathan Wills" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Jonathan Wills</span>
+                                <span class="post-date">19 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=250&fit=crop" alt="Building your API Stack" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Building your API Stack</h3>
+                        <p class="card-description">The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=2" alt="Sarah Chen" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Sarah Chen</span>
+                                <span class="post-date">18 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=250&fit=crop" alt="Bill Walsh leadership lessons" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Bill Walsh leadership lessons</h3>
+                        <p class="card-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=3" alt="Michael Scott" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Michael Scott</span>
+                                <span class="post-date">17 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 4 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop" alt="PM mental models" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">PM mental models</h3>
+                        <p class="card-description">Mental models are simple expressions of complex processes or relationships.</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=4" alt="Emma Watson" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Emma Watson</span>
+                                <span class="post-date">16 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 5 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=250&fit=crop" alt="What is Wireframing?" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">What is Wireframing?</h3>
+                        <p class="card-description">Introduction to wireframing and its principles. Learn from the best in the industry.</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=5" alt="David Kim" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">David Kim</span>
+                                <span class="post-date">15 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 6 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=250&fit=crop" alt="How collaboration makes us better designers" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">How collaboration makes us better designers</h3>
+                        <p class="card-description">Collaboration can make our teams stronger, and our individual designs better.</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=6" alt="Lisa Park" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Lisa Park</span>
+                                <span class="post-date">14 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 7 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Our top 10 Javascript frameworks to use" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Our top 10 Javascript frameworks to use</h3>
+                        <p class="card-description">JavaScript frameworks make development easy with extensive features and functionalities.</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=7" alt="Alex Johnson" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Alex Johnson</span>
+                                <span class="post-date">13 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 8 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&h=250&fit=crop" alt="Podcast: Creating a better CX Community" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Podcast: Creating a better CX Community</h3>
+                        <p class="card-description">Starting a community doesn't need to be complicated, but how do you get started?</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=8" alt="Rachel Green" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Rachel Green</span>
+                                <span class="post-date">12 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 9 -->
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=400&h=250&fit=crop" alt="Design systems explained" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Design systems explained</h3>
+                        <p class="card-description">A design system is a collection of reusable components guided by clear standards.</p>
+                        <div class="card-meta">
+                            <img src="https://i.pravatar.cc/40?img=9" alt="Tom Hardy" class="author-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Tom Hardy</span>
+                                <span class="post-date">11 Jan 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn-load-more">Loading more...</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
