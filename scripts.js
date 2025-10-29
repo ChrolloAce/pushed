@@ -1,6 +1,6 @@
 /**
- * Blog Page Interactive Features
- * Handles navigation, hero carousel, and dynamic content loading
+ * Miami Flooring Blog - Interactive Features
+ * Handles navigation, hero carousel, and dynamic blog content loading
  */
 
 // ========================================
@@ -12,19 +12,24 @@ class HeroCarouselManager {
         this.currentIndex = 0;
         this.featuredPosts = [
             {
-                image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&h=600&fit=crop',
-                title: 'Breaking Into Product Design: Advice from Untitled Founder, Frankie',
-                description: 'Discover the journey of our founder and learn valuable insights about breaking into the competitive world of product design. From first principles to advanced techniques.'
+                image: 'https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=1200&h=600&fit=crop',
+                title: 'Best Porcelain Tiles for Miami\'s Humid Climate',
+                description: 'Discover why porcelain tiles are the perfect choice for Miami homes and how they withstand humidity and moisture better than other materials. Get expert installation tips from Miami\'s top flooring professionals.'
             },
             {
-                image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&h=600&fit=crop',
-                title: 'The Future of Remote Work: Strategies for Success',
-                description: 'Explore how companies are adapting to the new normal and learn best practices for building strong remote teams that thrive in distributed environments.'
+                image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=600&fit=crop',
+                title: 'Travertine Tile Installation Guide for Miami Pools',
+                description: 'Everything you need to know about installing travertine tiles around your Miami pool area for that luxury resort feel. Learn about slip-resistance, durability, and maintenance.'
             },
             {
-                image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop',
-                title: 'Building Scalable Systems: Lessons from the Trenches',
-                description: 'Learn from real-world experiences about architecting systems that can handle millions of users while maintaining performance and reliability.'
+                image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=600&fit=crop',
+                title: 'Luxury Vinyl Plank vs. Hardwood: Miami Edition',
+                description: 'Compare LVP and hardwood flooring for South Florida homes. Learn which option offers better durability against humidity and salt air while maintaining stunning aesthetics.'
+            },
+            {
+                image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&h=600&fit=crop',
+                title: 'Marble Flooring Maintenance Tips for Miami Homes',
+                description: 'Keep your marble floors looking pristine in Miami\'s tropical climate with these expert maintenance and cleaning tips from professional installers.'
             }
         ];
         
@@ -37,7 +42,7 @@ class HeroCarouselManager {
             navArrow.addEventListener('click', () => this.nextPost());
         }
         
-        // Auto-rotate every 5 seconds
+        // Auto-rotate every 6 seconds
         this.startAutoRotate();
     }
     
@@ -54,6 +59,7 @@ class HeroCarouselManager {
         
         // Add fade transition
         heroCard.style.opacity = '0';
+        heroCard.style.transition = 'opacity 0.3s ease';
         
         setTimeout(() => {
             const heroImage = document.querySelector('.hero-image');
@@ -69,92 +75,42 @@ class HeroCarouselManager {
     }
     
     startAutoRotate() {
-        setInterval(() => this.nextPost(), 5000);
+        setInterval(() => this.nextPost(), 6000);
     }
 }
 
 // ========================================
-// Blog Content Loader
+// Blog Post Renderer
 // ========================================
 
-class BlogContentLoader {
+class BlogPostRenderer {
     constructor() {
-        this.loadMoreBtn = document.querySelector('.btn-load-more');
-        this.blogGrid = document.querySelector('.blog-grid');
-        this.isLoading = false;
+        this.blogGrid = document.getElementById('blog-grid');
+        this.postsPerPage = 70; // Show all 70 posts
+        this.currentPage = 1;
         
         this.init();
     }
     
     init() {
-        if (this.loadMoreBtn) {
-            this.loadMoreBtn.addEventListener('click', () => this.loadMorePosts());
+        if (typeof blogPosts !== 'undefined') {
+            this.renderPosts(blogPosts);
+        } else {
+            console.error('Blog posts data not found. Make sure blog-data.js is loaded.');
         }
     }
     
-    async loadMorePosts() {
-        if (this.isLoading) return;
+    renderPosts(posts) {
+        if (!this.blogGrid) return;
         
-        this.isLoading = true;
-        this.loadMoreBtn.textContent = 'Loading...';
-        this.loadMoreBtn.disabled = true;
+        // Clear existing content
+        this.blogGrid.innerHTML = '';
         
-        // Simulate API call
-        await this.simulateLoading(1500);
-        
-        this.addNewPosts();
-        
-        this.loadMoreBtn.textContent = 'Loading more...';
-        this.loadMoreBtn.disabled = false;
-        this.isLoading = false;
-    }
-    
-    simulateLoading(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-    
-    addNewPosts() {
-        const newPosts = this.generateMockPosts(3);
-        
-        newPosts.forEach(post => {
+        // Render all posts
+        posts.forEach(post => {
             const card = this.createBlogCard(post);
             this.blogGrid.appendChild(card);
         });
-    }
-    
-    generateMockPosts(count) {
-        const mockTitles = [
-            'Advanced CSS Techniques for Modern Web',
-            'Understanding Machine Learning Basics',
-            'The Art of Code Review',
-            'Mobile-First Design Principles',
-            'Security Best Practices for Developers',
-            'GraphQL vs REST: Which to Choose?'
-        ];
-        
-        const mockDescriptions = [
-            'Dive deep into modern CSS features and learn how to create stunning layouts.',
-            'A comprehensive guide to getting started with machine learning.',
-            'Learn how to conduct effective code reviews that improve team productivity.',
-            'Master the principles of designing for mobile devices first.',
-            'Essential security practices every developer should know.',
-            'Compare two popular API architectures and make informed decisions.'
-        ];
-        
-        const posts = [];
-        
-        for (let i = 0; i < count; i++) {
-            const randomIndex = Math.floor(Math.random() * mockTitles.length);
-            posts.push({
-                title: mockTitles[randomIndex],
-                description: mockDescriptions[randomIndex],
-                author: this.getRandomAuthor(),
-                date: this.getRandomDate(),
-                image: `https://images.unsplash.com/photo-${1500000000000 + Math.floor(Math.random() * 100000000000)}?w=400&h=250&fit=crop`
-            });
-        }
-        
-        return posts;
     }
     
     createBlogCard(post) {
@@ -162,14 +118,14 @@ class BlogContentLoader {
         article.className = 'blog-card';
         
         article.innerHTML = `
-            <img src="${post.image}" alt="${post.title}" class="card-image">
+            <img src="${post.image}" alt="${post.title}" class="card-image" loading="lazy">
             <div class="card-content">
                 <h3 class="card-title">${post.title}</h3>
                 <p class="card-description">${post.description}</p>
                 <div class="card-meta">
-                    <img src="${post.author.avatar}" alt="${post.author.name}" class="author-avatar">
+                    <img src="${post.avatar}" alt="${post.author}" class="author-avatar" loading="lazy">
                     <div class="author-info">
-                        <span class="author-name">${post.author.name}</span>
+                        <span class="author-name">${post.author}</span>
                         <span class="post-date">${post.date}</span>
                     </div>
                 </div>
@@ -177,22 +133,6 @@ class BlogContentLoader {
         `;
         
         return article;
-    }
-    
-    getRandomAuthor() {
-        const authors = [
-            { name: 'Jane Smith', avatar: 'https://i.pravatar.cc/40?img=10' },
-            { name: 'John Doe', avatar: 'https://i.pravatar.cc/40?img=11' },
-            { name: 'Alice Brown', avatar: 'https://i.pravatar.cc/40?img=12' },
-            { name: 'Bob Wilson', avatar: 'https://i.pravatar.cc/40?img=13' }
-        ];
-        
-        return authors[Math.floor(Math.random() * authors.length)];
-    }
-    
-    getRandomDate() {
-        const dates = ['10 Jan 2022', '9 Jan 2022', '8 Jan 2022', '7 Jan 2022'];
-        return dates[Math.floor(Math.random() * dates.length)];
     }
 }
 
@@ -250,6 +190,16 @@ class MobileNavigationHandler {
                 });
             }
         });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-dropdown')) {
+                this.dropdowns.forEach(dropdown => {
+                    const content = dropdown.querySelector('.dropdown-content');
+                    if (content) content.style.display = 'none';
+                });
+            }
+        });
     }
     
     toggleDropdown(dropdown) {
@@ -266,6 +216,35 @@ class MobileNavigationHandler {
             
             content.style.display = 'block';
         }
+    }
+}
+
+// ========================================
+// Search and Filter Handler (Future Enhancement)
+// ========================================
+
+class SearchFilterHandler {
+    constructor() {
+        this.searchInput = document.getElementById('search-input');
+        this.allPosts = typeof blogPosts !== 'undefined' ? blogPosts : [];
+        
+        this.init();
+    }
+    
+    init() {
+        if (this.searchInput) {
+            this.searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
+        }
+    }
+    
+    handleSearch(query) {
+        const filtered = this.allPosts.filter(post => {
+            return post.title.toLowerCase().includes(query.toLowerCase()) ||
+                   post.description.toLowerCase().includes(query.toLowerCase());
+        });
+        
+        const renderer = new BlogPostRenderer();
+        renderer.renderPosts(filtered);
     }
 }
 
@@ -296,8 +275,9 @@ class EmbedHandler {
             }, '*');
         };
         
-        // Send initial height
-        sendHeight();
+        // Send initial height after a delay to ensure content is loaded
+        setTimeout(sendHeight, 500);
+        setTimeout(sendHeight, 1500);
         
         // Update on resize
         window.addEventListener('resize', sendHeight);
@@ -307,8 +287,28 @@ class EmbedHandler {
         observer.observe(document.body, {
             childList: true,
             subtree: true,
-            attributes: true
+            attributes: false
         });
+    }
+}
+
+// ========================================
+// Blog Post Counter
+// ========================================
+
+class BlogPostCounter {
+    constructor() {
+        this.init();
+    }
+    
+    init() {
+        if (typeof blogPosts !== 'undefined') {
+            const sectionTitle = document.querySelector('.section-title');
+            if (sectionTitle) {
+                const count = blogPosts.length;
+                sectionTitle.textContent = `Recent blog posts (${count} articles)`;
+            }
+        }
     }
 }
 
@@ -318,9 +318,15 @@ class EmbedHandler {
 
 document.addEventListener('DOMContentLoaded', () => {
     new HeroCarouselManager();
-    new BlogContentLoader();
+    new BlogPostRenderer();
+    new BlogPostCounter();
     new ScrollHandler();
     new MobileNavigationHandler();
     new EmbedHandler();
 });
 
+// Optional: Expose for debugging
+window.MiamiFlooringBlog = {
+    version: '1.0.0',
+    postCount: typeof blogPosts !== 'undefined' ? blogPosts.length : 0
+};

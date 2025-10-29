@@ -1,6 +1,6 @@
-# Blog Page - Untitled UI
+# Miami Flooring & Tile Installation Blog
 
-A modern, responsive blog page designed to be embeddable on any website. Features a sticky navigation header, hero section with featured posts carousel, and a responsive blog grid layout.
+A modern, responsive blog page featuring 70 expert articles about flooring and tile installation in Miami. Designed to be embeddable on any website with a sticky navigation header, hero section with featured posts carousel, and a responsive blog grid layout.
 
 ## Features
 
