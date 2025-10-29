@@ -242,12 +242,12 @@ const blogPosts = [
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
 
-    // December 2024 - 10 posts
+    // December 2025 - 10 posts
     {
         title: "Limestone Flooring: Elegance for Miami Beach Homes",
         description: "Bring timeless elegance to your Miami Beach property with beautiful limestone flooring and proper installation.",
         author: "Miami Flooring and Tile",
-        date: "29 Dec 2024",
+        date: "29 Dec 2025",
         image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -255,7 +255,7 @@ const blogPosts = [
         title: "Cork Flooring: Is It Suitable for Miami Homes?",
         description: "Explore the benefits and challenges of installing cork flooring in Miami's humid subtropical climate.",
         author: "Miami Flooring and Tile",
-        date: "26 Dec 2024",
+        date: "26 Dec 2025",
         image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -263,7 +263,7 @@ const blogPosts = [
         title: "Subway Tile Patterns for Miami Kitchen Backsplashes",
         description: "Transform your Miami kitchen with creative subway tile patterns that go beyond the traditional layout.",
         author: "Miami Flooring and Tile",
-        date: "23 Dec 2024",
+        date: "23 Dec 2025",
         image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -271,7 +271,7 @@ const blogPosts = [
         title: "Best Underlayment for Tile Floors in Miami",
         description: "Choose the right underlayment to ensure your Miami tile installation is waterproof and long-lasting.",
         author: "Miami Flooring and Tile",
-        date: "20 Dec 2024",
+        date: "20 Dec 2025",
         image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -279,7 +279,7 @@ const blogPosts = [
         title: "Geometric Tile Designs Taking Over Miami Homes",
         description: "Get inspired by bold geometric tile patterns that are trending in Miami's most stylish homes.",
         author: "Miami Flooring and Tile",
-        date: "17 Dec 2024",
+        date: "17 Dec 2025",
         image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -287,7 +287,7 @@ const blogPosts = [
         title: "Engineered Hardwood vs. Solid Hardwood in Miami",
         description: "Learn which hardwood option performs better in Miami's challenging climate and humidity levels.",
         author: "Miami Flooring and Tile",
-        date: "14 Dec 2024",
+        date: "14 Dec 2025",
         image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -295,7 +295,7 @@ const blogPosts = [
         title: "How to Install Tile on Miami Exterior Walls",
         description: "Master the techniques for installing exterior tiles that can withstand Miami's tropical weather conditions.",
         author: "Miami Flooring and Tile",
-        date: "11 Dec 2024",
+        date: "11 Dec 2025",
         image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -303,7 +303,7 @@ const blogPosts = [
         title: "Terrazzo Flooring: Miami's Classic Comeback",
         description: "Terrazzo is back! Discover why this classic Miami flooring is experiencing a major revival in modern homes.",
         author: "Miami Flooring and Tile",
-        date: "8 Dec 2024",
+        date: "8 Dec 2025",
         image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -311,7 +311,7 @@ const blogPosts = [
         title: "Laminate Flooring: Budget-Friendly Option for Miami",
         description: "Explore affordable laminate flooring options that can work in Miami homes with proper installation and care.",
         author: "Miami Flooring and Tile",
-        date: "5 Dec 2024",
+        date: "5 Dec 2025",
         image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -319,17 +319,17 @@ const blogPosts = [
         title: "Blue and White Tile Combinations for Miami Homes",
         description: "Create a fresh coastal look with stunning blue and white tile combinations perfect for Miami's beach vibe.",
         author: "Miami Flooring and Tile",
-        date: "2 Dec 2024",
+        date: "2 Dec 2025",
         image: "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
 
-    // November 2024 - 10 posts
+    // November 2025 - 10 posts
     {
         title: "Epoxy Flooring for Miami Garages: Complete Guide",
         description: "Transform your Miami garage with durable, attractive epoxy flooring that resists stains and moisture.",
         author: "Miami Flooring and Tile",
-        date: "28 Nov 2024",
+        date: "28 Nov 2025",
         image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -337,7 +337,7 @@ const blogPosts = [
         title: "Hexagon Tiles: Modern Design for Miami Bathrooms",
         description: "Add contemporary flair to your Miami bathroom with trendy hexagon tiles in various sizes and colors.",
         author: "Miami Flooring and Tile",
-        date: "25 Nov 2024",
+        date: "25 Nov 2025",
         image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -345,7 +345,7 @@ const blogPosts = [
         title: "Polished Concrete Floors: Industrial Chic in Miami",
         description: "Embrace the industrial trend with polished concrete floors perfect for Miami lofts and modern homes.",
         author: "Miami Flooring and Tile",
-        date: "22 Nov 2024",
+        date: "22 Nov 2025",
         image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -353,7 +353,7 @@ const blogPosts = [
         title: "How to Choose Tile for Miami Outdoor Kitchens",
         description: "Select the perfect tiles for your Miami outdoor kitchen that can handle heat, moisture, and frequent use.",
         author: "Miami Flooring and Tile",
-        date: "19 Nov 2024",
+        date: "19 Nov 2025",
         image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -361,7 +361,7 @@ const blogPosts = [
         title: "Acrylic vs. Epoxy Grout for Miami Tile Installations",
         description: "Compare grout types to find the best option for Miami's humidity and prevent mold and mildew growth.",
         author: "Miami Flooring and Tile",
-        date: "16 Nov 2024",
+        date: "16 Nov 2025",
         image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -369,7 +369,7 @@ const blogPosts = [
         title: "Herringbone Pattern: Classic Flooring for Miami Homes",
         description: "Install timeless herringbone pattern flooring that adds sophistication to any Miami interior.",
         author: "Miami Flooring and Tile",
-        date: "13 Nov 2024",
+        date: "13 Nov 2025",
         image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -377,7 +377,7 @@ const blogPosts = [
         title: "Matte vs. Glossy Tiles: Which is Better for Miami?",
         description: "Understand the pros and cons of matte and glossy tile finishes for different areas of your Miami home.",
         author: "Miami Flooring and Tile",
-        date: "10 Nov 2024",
+        date: "10 Nov 2025",
         image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -385,7 +385,7 @@ const blogPosts = [
         title: "Natural Stone Tile Care in Miami's Salty Air",
         description: "Protect and maintain your natural stone tiles from damage caused by Miami's coastal salt air exposure.",
         author: "Miami Flooring and Tile",
-        date: "7 Nov 2024",
+        date: "7 Nov 2025",
         image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -393,7 +393,7 @@ const blogPosts = [
         title: "Commercial Tile Installation for Miami Businesses",
         description: "Heavy-duty tile solutions for Miami commercial spaces that handle high traffic and look professional.",
         author: "Miami Flooring and Tile",
-        date: "4 Nov 2024",
+        date: "4 Nov 2025",
         image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -401,17 +401,17 @@ const blogPosts = [
         title: "Chevron vs. Herringbone: Miami Floor Pattern Guide",
         description: "Learn the difference between chevron and herringbone patterns and which works best for Miami interiors.",
         author: "Miami Flooring and Tile",
-        date: "1 Nov 2024",
+        date: "1 Nov 2025",
         image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
 
-    // October 2024 - 10 posts
+    // October 2025 - 10 posts
     {
         title: "Onyx Tiles: Luxury Statement for Miami Properties",
         description: "Create stunning focal points with translucent onyx tiles perfect for high-end Miami residences.",
         author: "Miami Flooring and Tile",
-        date: "29 Oct 2024",
+        date: "29 Oct 2025",
         image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -419,7 +419,7 @@ const blogPosts = [
         title: "How to Remove Old Tile Flooring in Miami Homes",
         description: "Step-by-step guide to safely removing old tiles and preparing for new flooring installation in Miami.",
         author: "Miami Flooring and Tile",
-        date: "26 Oct 2024",
+        date: "26 Oct 2025",
         image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -427,7 +427,7 @@ const blogPosts = [
         title: "Pebble Tile Showers: Spa-Like Bathrooms in Miami",
         description: "Transform your Miami bathroom into a relaxing spa retreat with natural pebble tile shower floors.",
         author: "Miami Flooring and Tile",
-        date: "23 Oct 2024",
+        date: "23 Oct 2025",
         image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -435,7 +435,7 @@ const blogPosts = [
         title: "Waterproof Vinyl Plank for Miami Laundry Rooms",
         description: "The best waterproof vinyl plank options for Miami laundry rooms prone to spills and moisture.",
         author: "Miami Flooring and Tile",
-        date: "20 Oct 2024",
+        date: "20 Oct 2025",
         image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -443,7 +443,7 @@ const blogPosts = [
         title: "Encaustic Cement Tiles: Artistic Flooring for Miami",
         description: "Add vibrant patterns and personality to your Miami home with handmade encaustic cement tiles.",
         author: "Miami Flooring and Tile",
-        date: "17 Oct 2024",
+        date: "17 Oct 2025",
         image: "https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -451,7 +451,7 @@ const blogPosts = [
         title: "Best Transition Strips for Miami Tile Installations",
         description: "Create seamless transitions between different flooring types in your Miami home with the right strips.",
         author: "Miami Flooring and Tile",
-        date: "14 Oct 2024",
+        date: "14 Oct 2025",
         image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -459,7 +459,7 @@ const blogPosts = [
         title: "Glass Tile Backsplashes for Modern Miami Kitchens",
         description: "Illuminate your Miami kitchen with reflective glass tile backsplashes in stunning colors and patterns.",
         author: "Miami Flooring and Tile",
-        date: "11 Oct 2024",
+        date: "11 Oct 2025",
         image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -467,7 +467,7 @@ const blogPosts = [
         title: "Preventing Mold on Tile and Grout in Miami",
         description: "Essential prevention strategies to keep your Miami tile and grout mold-free in humid conditions.",
         author: "Miami Flooring and Tile",
-        date: "8 Oct 2024",
+        date: "8 Oct 2025",
         image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -475,7 +475,7 @@ const blogPosts = [
         title: "Quarry Tiles: Durable Flooring for Miami Patios",
         description: "Discover the benefits of quarry tiles for outdoor Miami spaces that need durability and style.",
         author: "Miami Flooring and Tile",
-        date: "5 Oct 2024",
+        date: "5 Oct 2025",
         image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
@@ -483,7 +483,7 @@ const blogPosts = [
         title: "DIY Tile Installation vs. Hiring Miami Professionals",
         description: "Weigh the pros and cons of DIY tile installation versus hiring experienced Miami tile contractors.",
         author: "Miami Flooring and Tile",
-        date: "2 Oct 2024",
+        date: "2 Oct 2025",
         image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
