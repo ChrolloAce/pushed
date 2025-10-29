@@ -496,10 +496,24 @@ body {
 body.embedded {
     margin: 0;
     padding: 0;
+    overflow: visible !important;
+    height: auto !important;
 }
 
 body.embedded .header {
     position: relative;
+}
+
+/* Remove internal scrolling when embedded */
+html.embedded,
+body.embedded {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+/* Make back button work in embedded mode */
+body.embedded .back-button {
+    position: absolute;
 }
 
 /* ========================================

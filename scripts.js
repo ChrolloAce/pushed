@@ -232,6 +232,9 @@ class BlogPageNavigator {
         
         // Scroll to top
         window.scrollTo(0, 0);
+        
+        // Send height update if embedded
+        this.notifyHeightChange();
     }
     
     closePost() {
@@ -243,6 +246,28 @@ class BlogPageNavigator {
         
         // Scroll to top
         window.scrollTo(0, 0);
+        
+        // Send height update if embedded
+        this.notifyHeightChange();
+    }
+    
+    notifyHeightChange() {
+        // If embedded, notify parent of height change
+        if (window.self !== window.top) {
+            setTimeout(() => {
+                const height = Math.max(
+                    document.documentElement.scrollHeight,
+                    document.documentElement.offsetHeight,
+                    document.body.scrollHeight,
+                    document.body.offsetHeight
+                );
+                
+                window.parent.postMessage({
+                    type: 'blogHeightUpdate',
+                    height: height
+                }, '*');
+            }, 100);
+        }
     }
 }
 
@@ -370,6 +395,7 @@ class EmbedHandler {
     init() {
         // Check if page is embedded in iframe
         if (window.self !== window.top) {
+            document.documentElement.classList.add('embedded');
             document.body.classList.add('embedded');
             this.setupEmbedCommunication();
         }
@@ -378,27 +404,59 @@ class EmbedHandler {
     setupEmbedCommunication() {
         // Send height updates to parent window
         const sendHeight = () => {
-            const height = document.documentElement.scrollHeight;
+            const height = Math.max(
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight,
+                document.body.scrollHeight,
+                document.body.offsetHeight
+            );
+            
             window.parent.postMessage({
                 type: 'blogHeightUpdate',
                 height: height
             }, '*');
         };
         
-        // Send initial height after a delay to ensure content is loaded
+        // Send initial height multiple times to ensure it's received
+        setTimeout(sendHeight, 100);
+        setTimeout(sendHeight, 300);
         setTimeout(sendHeight, 500);
-        setTimeout(sendHeight, 1500);
+        setTimeout(sendHeight, 1000);
+        setTimeout(sendHeight, 2000);
         
         // Update on resize
         window.addEventListener('resize', sendHeight);
         
-        // Update when content changes
-        const observer = new MutationObserver(sendHeight);
+        // Update when content changes (with debouncing)
+        let timeoutId;
+        const debouncedSendHeight = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(sendHeight, 100);
+        };
+        
+        const observer = new MutationObserver(debouncedSendHeight);
         observer.observe(document.body, {
             childList: true,
             subtree: true,
-            attributes: false
+            attributes: true,
+            characterData: true
         });
+        
+        // Send height when images load
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.addEventListener('load', sendHeight);
+        });
+        
+        // Send height when view changes (blog post opened/closed)
+        const mainView = document.getElementById('main-view');
+        const postView = document.getElementById('blog-post-view');
+        
+        if (mainView && postView) {
+            const viewObserver = new MutationObserver(sendHeight);
+            viewObserver.observe(mainView, { attributes: true, attributeFilter: ['class'] });
+            viewObserver.observe(postView, { attributes: true, attributeFilter: ['class'] });
+        }
     }
 }
 

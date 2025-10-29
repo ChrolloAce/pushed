@@ -60,9 +60,9 @@ Add this code to any webpage where you want to embed the blog:
 </iframe>
 ```
 
-### Responsive Iframe with Auto Height
+### Responsive Iframe with Auto Height (Recommended)
 
-For a truly responsive embed that adjusts height automatically:
+For a truly responsive embed that adjusts height automatically and eliminates double scrollbars:
 
 ```html
 <!-- Add this iframe to your page -->
@@ -70,7 +70,8 @@ For a truly responsive embed that adjusts height automatically:
     id="blog-embed"
     src="path/to/index.html" 
     width="100%" 
-    style="border: none; min-height: 800px;"
+    scrolling="no"
+    style="border: none; min-height: 800px; overflow: hidden;"
     title="Blog">
 </iframe>
 
@@ -86,6 +87,8 @@ For a truly responsive embed that adjusts height automatically:
     });
 </script>
 ```
+
+**Note:** This solution eliminates the double scrollbar issue. The iframe will automatically expand to fit all content, and only your parent page will have a scrollbar.
 
 ### WordPress Embed
 
