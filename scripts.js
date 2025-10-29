@@ -14,22 +14,26 @@ class HeroCarouselManager {
             {
                 image: 'https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=1200&h=600&fit=crop',
                 title: 'Best Porcelain Tiles for Miami\'s Humid Climate',
-                description: 'Discover why porcelain tiles are the perfect choice for Miami homes and how they withstand humidity and moisture better than other materials. Get expert installation tips from Miami\'s top flooring professionals.'
+                description: 'Discover why porcelain tiles are the perfect choice for Miami homes and how they withstand humidity and moisture better than other materials. Get expert installation tips from Miami\'s top flooring professionals.',
+                postIndex: 0 // Links to first blog post
             },
             {
                 image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=600&fit=crop',
                 title: 'Travertine Tile Installation Guide for Miami Pools',
-                description: 'Everything you need to know about installing travertine tiles around your Miami pool area for that luxury resort feel. Learn about slip-resistance, durability, and maintenance.'
+                description: 'Everything you need to know about installing travertine tiles around your Miami pool area for that luxury resort feel. Learn about slip-resistance, durability, and maintenance.',
+                postIndex: 2 // Links to third blog post
             },
             {
                 image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&h=600&fit=crop',
                 title: 'Luxury Vinyl Plank vs. Hardwood: Miami Edition',
-                description: 'Compare LVP and hardwood flooring for South Florida homes. Learn which option offers better durability against humidity and salt air while maintaining stunning aesthetics.'
+                description: 'Compare LVP and hardwood flooring for South Florida homes. Learn which option offers better durability against humidity and salt air while maintaining stunning aesthetics.',
+                postIndex: 1 // Links to second blog post
             },
             {
                 image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&h=600&fit=crop',
                 title: 'Marble Flooring Maintenance Tips for Miami Homes',
-                description: 'Keep your marble floors looking pristine in Miami\'s tropical climate with these expert maintenance and cleaning tips from professional installers.'
+                description: 'Keep your marble floors looking pristine in Miami\'s tropical climate with these expert maintenance and cleaning tips from professional installers.',
+                postIndex: 5 // Links to sixth blog post
             }
         ];
         
@@ -38,8 +42,21 @@ class HeroCarouselManager {
     
     init() {
         const navArrow = document.querySelector('.hero-nav-arrow');
+        const heroCard = document.getElementById('hero-card');
+        
         if (navArrow) {
-            navArrow.addEventListener('click', () => this.nextPost());
+            navArrow.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.nextPost();
+            });
+        }
+        
+        // Make hero card clickable
+        if (heroCard) {
+            heroCard.addEventListener('click', () => {
+                const currentPost = this.featuredPosts[this.currentIndex];
+                this.openFeaturedPost(currentPost.postIndex);
+            });
         }
         
         // Auto-rotate every 6 seconds
@@ -72,6 +89,13 @@ class HeroCarouselManager {
             
             heroCard.style.opacity = '1';
         }, 300);
+    }
+    
+    openFeaturedPost(postIndex) {
+        if (typeof blogPosts !== 'undefined' && blogPosts[postIndex]) {
+            const pageNavigator = new BlogPageNavigator();
+            pageNavigator.openPost(blogPosts[postIndex]);
+        }
     }
     
     startAutoRotate() {
@@ -144,82 +168,81 @@ class BlogPostRenderer {
     
     openBlogPost(index) {
         if (typeof blogPosts !== 'undefined' && blogPosts[index]) {
-            const modalHandler = new BlogModalHandler();
-            modalHandler.openModal(blogPosts[index]);
+            const pageNavigator = new BlogPageNavigator();
+            pageNavigator.openPost(blogPosts[index]);
         }
     }
 }
 
 // ========================================
-// Blog Modal Handler
+// Blog Page Navigator
 // ========================================
 
-class BlogModalHandler {
+class BlogPageNavigator {
     constructor() {
-        this.modal = document.getElementById('blog-modal');
-        this.modalOverlay = document.getElementById('modal-overlay');
-        this.modalClose = document.getElementById('modal-close');
-        this.modalTitle = document.getElementById('modal-title');
-        this.modalImage = document.getElementById('modal-image');
-        this.modalAuthor = document.getElementById('modal-author');
-        this.modalAvatar = document.getElementById('modal-avatar');
-        this.modalDate = document.getElementById('modal-date');
-        this.modalBody = document.getElementById('modal-body');
+        this.mainView = document.getElementById('main-view');
+        this.postView = document.getElementById('blog-post-view');
+        this.backButton = document.getElementById('back-button');
+        this.postTitle = document.getElementById('post-title');
+        this.postImage = document.getElementById('post-image');
+        this.postAuthor = document.getElementById('post-author');
+        this.postAvatar = document.getElementById('post-avatar');
+        this.postDate = document.getElementById('post-date');
+        this.postBody = document.getElementById('post-body');
         
         this.setupEventListeners();
     }
     
     setupEventListeners() {
-        // Close button
-        if (this.modalClose) {
-            this.modalClose.addEventListener('click', () => this.closeModal());
-        }
-        
-        // Overlay click
-        if (this.modalOverlay) {
-            this.modalOverlay.addEventListener('click', () => this.closeModal());
+        // Back button
+        if (this.backButton) {
+            this.backButton.addEventListener('click', () => this.closePost());
         }
         
         // Escape key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.modal && this.modal.classList.contains('active')) {
-                this.closeModal();
+            if (e.key === 'Escape' && this.postView && this.postView.classList.contains('active')) {
+                this.closePost();
             }
         });
     }
     
-    openModal(post) {
-        if (!this.modal) return;
+    openPost(post) {
+        if (!this.postView || !this.mainView) return;
         
-        // Populate modal content
-        if (this.modalTitle) this.modalTitle.textContent = post.title;
-        if (this.modalImage) {
-            this.modalImage.src = post.image;
-            this.modalImage.alt = post.title;
+        // Populate post content
+        if (this.postTitle) this.postTitle.textContent = post.title;
+        if (this.postImage) {
+            this.postImage.src = post.image;
+            this.postImage.alt = post.title;
         }
-        if (this.modalAuthor) this.modalAuthor.textContent = post.author;
-        if (this.modalAvatar) {
-            this.modalAvatar.src = post.avatar;
-            this.modalAvatar.alt = post.author;
+        if (this.postAuthor) this.postAuthor.textContent = post.author;
+        if (this.postAvatar) {
+            this.postAvatar.src = post.avatar;
+            this.postAvatar.alt = post.author;
         }
-        if (this.modalDate) this.modalDate.textContent = post.date;
-        if (this.modalBody) {
-            this.modalBody.innerHTML = post.content || '<p>Content coming soon...</p>';
+        if (this.postDate) this.postDate.textContent = post.date;
+        if (this.postBody) {
+            this.postBody.innerHTML = post.content || '<p>Content coming soon...</p>';
         }
         
-        // Show modal
-        this.modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        // Hide main view and show post view
+        this.mainView.classList.add('hidden');
+        this.postView.classList.add('active');
         
-        // Scroll to top of modal
-        this.modal.scrollTop = 0;
+        // Scroll to top
+        window.scrollTo(0, 0);
     }
     
-    closeModal() {
-        if (!this.modal) return;
+    closePost() {
+        if (!this.postView || !this.mainView) return;
         
-        this.modal.classList.remove('active');
-        document.body.style.overflow = '';
+        // Hide post view and show main view
+        this.postView.classList.remove('active');
+        this.mainView.classList.remove('hidden');
+        
+        // Scroll to top
+        window.scrollTo(0, 0);
     }
 }
 
