@@ -568,6 +568,252 @@ const blogPosts = [
         date: "1 Sep 2024",
         image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+
+    // August 2024 - 10 posts
+    {
+        title: "Stain-Resistant Flooring Solutions for Miami Kitchens",
+        description: "Discover flooring options that resist spills, stains, and moisture in busy Miami kitchens.",
+        author: "Miami Flooring and Tile",
+        date: "29 Aug 2024",
+        image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Installing Tile Backsplash Behind Miami Stoves",
+        description: "Learn proper techniques for heat-resistant tile installation behind stoves in Miami homes.",
+        author: "Miami Flooring and Tile",
+        date: "26 Aug 2024",
+        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Luxury Tile Borders and Medallions for Miami Homes",
+        description: "Add elegant focal points with custom tile borders and medallions in your Miami residence.",
+        author: "Miami Flooring and Tile",
+        date: "23 Aug 2024",
+        image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Cork Tile Flooring: Eco-Friendly Option for Miami",
+        description: "Explore sustainable cork tile flooring and its performance in Miami's humid environment.",
+        author: "Miami Flooring and Tile",
+        date: "20 Aug 2024",
+        image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Bathroom Floor Heating Systems for Miami Luxury Homes",
+        description: "Add spa-like comfort with radiant floor heating systems in Miami luxury bathrooms.",
+        author: "Miami Flooring and Tile",
+        date: "17 Aug 2024",
+        image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Reclaimed Wood Look Tiles for Miami Beach Houses",
+        description: "Get the rustic charm of reclaimed wood with durable, moisture-resistant tile alternatives.",
+        author: "Miami Flooring and Tile",
+        date: "14 Aug 2024",
+        image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Fixing Hollow-Sounding Tiles in Miami Installations",
+        description: "Identify and repair hollow tiles before they crack in Miami's climate conditions.",
+        author: "Miami Flooring and Tile",
+        date: "11 Aug 2024",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Metallic Tile Accents for Modern Miami Interiors",
+        description: "Create stunning visual impact with metallic and iridescent tile accents in contemporary Miami homes.",
+        author: "Miami Flooring and Tile",
+        date: "8 Aug 2024",
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Antique Brick Flooring: Old World Charm in Miami",
+        description: "Bring timeless European elegance to your Miami home with authentic antique brick flooring.",
+        author: "Miami Flooring and Tile",
+        date: "5 Aug 2024",
+        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Wide Plank Luxury Vinyl for Miami Open Concepts",
+        description: "Maximize visual flow in open concept Miami homes with wide plank luxury vinyl flooring.",
+        author: "Miami Flooring and Tile",
+        date: "2 Aug 2024",
+        image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+
+    // July 2024 - 10 posts
+    {
+        title: "Cementitious Backer Board Installation in Miami",
+        description: "Proper backer board installation techniques for moisture-prone areas in South Florida.",
+        author: "Miami Flooring and Tile",
+        date: "30 Jul 2024",
+        image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Arabesque Tiles: Moroccan Flair for Miami Homes",
+        description: "Add exotic elegance with arabesque-shaped tiles perfect for Miami's eclectic style.",
+        author: "Miami Flooring and Tile",
+        date: "27 Jul 2024",
+        image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Soundproofing Floors in Miami Condos and Apartments",
+        description: "Reduce noise transmission with proper underlayment and flooring choices for Miami multi-family buildings.",
+        author: "Miami Flooring and Tile",
+        date: "24 Jul 2024",
+        image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Porcelain Tile Thickness: What Miami Needs",
+        description: "Choose the right tile thickness for different applications in Miami residential and commercial spaces.",
+        author: "Miami Flooring and Tile",
+        date: "21 Jul 2024",
+        image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Installing Tile on Miami Wooden Subfloors",
+        description: "Essential preparation steps for successful tile installation over wood subfloors in humid climates.",
+        author: "Miami Flooring and Tile",
+        date: "18 Jul 2024",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Glass Tile Pool Waterlines for Miami Pools",
+        description: "Choose and install stunning glass tile waterlines that withstand Miami's pool chemicals and sun.",
+        author: "Miami Flooring and Tile",
+        date: "15 Jul 2024",
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Vintage Cement Tile Patterns for Miami Bungalows",
+        description: "Restore authentic character with vintage-inspired cement tile patterns in historic Miami homes.",
+        author: "Miami Flooring and Tile",
+        date: "12 Jul 2024",
+        image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Waterproofing Membranes for Miami Shower Installations",
+        description: "Critical waterproofing techniques to prevent water damage in Miami bathroom renovations.",
+        author: "Miami Flooring and Tile",
+        date: "9 Jul 2024",
+        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Concrete Overlay Flooring for Miami Homes",
+        description: "Transform existing floors with decorative concrete overlays perfect for Miami's modern aesthetic.",
+        author: "Miami Flooring and Tile",
+        date: "6 Jul 2024",
+        image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Large Format Slab Tiles: Modern Miami Luxury",
+        description: "Create seamless, contemporary spaces with oversized porcelain slab tiles in Miami installations.",
+        author: "Miami Flooring and Tile",
+        date: "3 Jul 2024",
+        image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+
+    // June 2024 - 10 posts
+    {
+        title: "Preventing Efflorescence on Miami Tile Installations",
+        description: "Understand and prevent white salt deposits on tiles in Miami's moisture-rich environment.",
+        author: "Miami Flooring and Tile",
+        date: "28 Jun 2024",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Luxury Marble Mosaics for Miami Bathrooms",
+        description: "Design stunning feature walls and floors with premium marble mosaic tiles in Miami bathrooms.",
+        author: "Miami Flooring and Tile",
+        date: "25 Jun 2024",
+        image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Commercial Grade Flooring for Miami Retail Spaces",
+        description: "Heavy-duty flooring solutions that withstand high traffic in Miami commercial environments.",
+        author: "Miami Flooring and Tile",
+        date: "22 Jun 2024",
+        image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Quartz Tile vs. Granite Tile for Miami Counters",
+        description: "Compare engineered quartz and natural granite tiles for Miami kitchen and bathroom surfaces.",
+        author: "Miami Flooring and Tile",
+        date: "19 Jun 2024",
+        image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Textured Non-Slip Tiles for Miami Elderly Care",
+        description: "Safety-focused tile selections with texture and grip for senior-friendly Miami homes.",
+        author: "Miami Flooring and Tile",
+        date: "16 Jun 2024",
+        image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Installing Outdoor Tile on Miami Balconies",
+        description: "Weather-resistant tile installation techniques for Miami high-rise balconies and terraces.",
+        author: "Miami Flooring and Tile",
+        date: "13 Jun 2024",
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Rectified Tile Edge Options for Modern Miami Homes",
+        description: "Achieve ultra-thin grout lines with precisely cut rectified tiles in contemporary Miami spaces.",
+        author: "Miami Flooring and Tile",
+        date: "10 Jun 2024",
+        image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Refinishing vs. Replacing Terrazzo in Miami",
+        description: "Decide whether to restore or replace vintage terrazzo floors in historic Miami properties.",
+        author: "Miami Flooring and Tile",
+        date: "7 Jun 2024",
+        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Antimicrobial Tile Coatings for Miami Healthcare",
+        description: "Hygienic flooring solutions with antimicrobial properties for Miami medical facilities.",
+        author: "Miami Flooring and Tile",
+        date: "4 Jun 2024",
+        image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
+    },
+    {
+        title: "Mixed Material Flooring Transitions in Miami Homes",
+        description: "Create seamless transitions between tile, wood, and carpet in open-plan Miami residences.",
+        author: "Miami Flooring and Tile",
+        date: "1 Jun 2024",
+        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=250&fit=crop",
+        avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     }
 ];
 
