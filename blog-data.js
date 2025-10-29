@@ -74,7 +74,7 @@ const blogPosts = [
         description: "Understand the key differences between ceramic and porcelain tiles to make the best choice for your Miami home.",
         author: "Miami Flooring and Tile",
         date: "4 Mar 2025",
-        image: "https://images.unsplash.com/photo-1615875474908-f403e4f0946f?w=400&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
     {
@@ -198,7 +198,7 @@ const blogPosts = [
         description: "Maximize your small Miami apartment or condo with smart tile sizing choices that create the illusion of space.",
         author: "Miami Flooring and Tile",
         date: "18 Jan 2025",
-        image: "https://images.unsplash.com/photo-1615875474908-f403e4f0946f?w=400&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
     {
@@ -320,7 +320,7 @@ const blogPosts = [
         description: "Create a fresh coastal look with stunning blue and white tile combinations perfect for Miami's beach vibe.",
         author: "Miami Flooring and Tile",
         date: "2 Dec 2024",
-        image: "https://images.unsplash.com/photo-1615875474908-f403e4f0946f?w=400&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
 
@@ -444,7 +444,7 @@ const blogPosts = [
         description: "Add vibrant patterns and personality to your Miami home with handmade encaustic cement tiles.",
         author: "Miami Flooring and Tile",
         date: "17 Oct 2024",
-        image: "https://images.unsplash.com/photo-1615875474908-f403e4f0946f?w=400&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     },
     {
@@ -566,7 +566,7 @@ const blogPosts = [
         description: "Select tile colors that complement Miami's abundant natural sunlight for perfect ambiance.",
         author: "Miami Flooring and Tile",
         date: "1 Sep 2024",
-        image: "https://images.unsplash.com/photo-1615875474908-f403e4f0946f?w=400&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=250&fit=crop",
         avatar: "https://ui-avatars.com/api/?name=Miami+Flooring&background=1a1a1a&color=fff&size=40&bold=true"
     }
 ];
