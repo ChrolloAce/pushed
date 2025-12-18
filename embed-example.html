@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Embed Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #f9fafb;
+        }
+        
+        .example-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+        
+        .example-header h1 {
+            font-size: 1.5rem;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+        
+        .example-header p {
+            color: #6b7280;
+            font-size: 0.938rem;
+        }
+        
+        .embed-container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .embed-wrapper {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        #blog-embed {
+            display: block;
+            width: 100%;
+            border: none;
+            min-height: 800px;
+            overflow: hidden;
+        }
+        
+        .info-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-section h2 {
+            font-size: 1.25rem;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        
+        .info-section p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .code-block {
+            background-color: #f3f4f6;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .code-block code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <header class="example-header">
+        <h1>🏠 Miami Flooring Blog Embed Example</h1>
+        <p>This demonstrates how the Miami Flooring & Tile Installation blog looks when embedded in another website</p>
+    </header>
+    
+    <div class="embed-container">
+        <div class="embed-wrapper">
+            <iframe 
+                id="blog-embed"
+                src="index.html" 
+                title="Embedded Blog"
+                scrolling="no">
+            </iframe>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>📋 How to Embed</h2>
+        <p>Copy and paste this code into your website where you want the blog to appear:</p>
+        
+        <div class="code-block">
+            <code>&lt;iframe 
+    id="blog-embed"
+    src="https://your-domain.com/path/to/index.html" 
+    width="100%" 
+    style="border: none; min-height: 800px;"
+    title="Blog"&gt;
+&lt;/iframe&gt;
+
+&lt;script&gt;
+    window.addEventListener('message', function(event) {
+        if (event.data.type === 'blogHeightUpdate') {
+            const iframe = document.getElementById('blog-embed');
+            if (iframe) {
+                iframe.style.height = event.data.height + 'px';
+            }
+        }
+    });
+&lt;/script&gt;</code>
+        </div>
+        
+        <h2>✨ Features</h2>
+        <p>
+            <strong>Responsive Design:</strong> Automatically adapts to mobile, tablet, and desktop screens.<br>
+            <strong>Auto Height:</strong> The iframe height adjusts automatically based on content.<br>
+            <strong>No Dependencies:</strong> Pure HTML, CSS, and JavaScript - no frameworks required.<br>
+            <strong>Smooth Animations:</strong> Professional hover effects and transitions throughout.
+        </p>
+        
+        <h2>🎯 Usage Scenarios</h2>
+        <p>
+            • Embed in WordPress, Webflow, or Wix websites<br>
+            • Add to React, Vue, or Angular applications<br>
+            • Include in email newsletters (as a link)<br>
+            • Use in landing pages or marketing sites
+        </p>
+    </div>
+    
+    <script>
+        // Handle responsive iframe height
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'blogHeightUpdate') {
+                const iframe = document.getElementById('blog-embed');
+                if (iframe) {
+                    iframe.style.height = event.data.height + 'px';
+                }
+            }
+        });
+        
+        // Fallback: Set minimum height based on window size
+        function adjustIframeHeight() {
+            const iframe = document.getElementById('blog-embed');
+            if (iframe && window.innerWidth <= 768) {
+                iframe.style.minHeight = '1200px';
+            } else if (iframe) {
+                iframe.style.minHeight = '800px';
+            }
+        }
+        
+        window.addEventListener('resize', adjustIframeHeight);
+        adjustIframeHeight();
+    </script>
+</body>
+</html>
+

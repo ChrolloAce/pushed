@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Flooring & Tile Installation Experts - Blog</title>
+    <meta name="description" content="Expert advice on flooring and tile installation in Miami. From porcelain to marble, hardwood to vinyl, get the best tips for South Florida homes.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Content Container -->
+    <div id="main-view">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero-section">
+            <div class="hero-container">
+                <div class="hero-card" id="hero-card" style="cursor: pointer;">
+                    <img src="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=1200&h=600&fit=crop" alt="Best Porcelain Tiles for Miami's Humid Climate" class="hero-image">
+                    <div class="hero-overlay">
+                        <span class="featured-badge">Featured</span>
+                        <h1 class="hero-title">Best Porcelain Tiles for Miami's Humid Climate</h1>
+                        <p class="hero-description">Discover why porcelain tiles are the perfect choice for Miami homes and how they withstand humidity and moisture better than other materials. Get expert installation tips from Miami's top flooring professionals.</p>
+                        <button class="hero-nav-arrow" aria-label="Next featured post">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-section" id="blog-section">
+            <div class="blog-container">
+                <h2 class="section-title">Recent blog posts</h2>
+                
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Blog posts will be dynamically loaded here -->
+                </div>
+
+                <div class="load-more-container" style="display:none;">
+                    <button class="btn-load-more">Load More</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Blog Post Full Page View -->
+    <div class="blog-post-view" id="blog-post-view">
+        <button class="back-button" id="back-button" aria-label="Back to posts">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+        </button>
+        
+        <div class="post-header">
+            <img src="" alt="" class="post-featured-image" id="post-image">
+            <div class="post-header-content">
+                <h1 class="post-title" id="post-title"></h1>
+                <div class="post-meta">
+                    <img src="" alt="" class="post-author-avatar" id="post-avatar">
+                    <div class="post-author-info">
+                        <span class="post-author-name" id="post-author"></span>
+                        <span class="post-date" id="post-date"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-body" id="post-body">
+            <!-- Blog content will be loaded here -->
+        </div>
+    </div>
+
+    <script src="blog-data.js"></script>
+    <script src="blog-content-generator.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
